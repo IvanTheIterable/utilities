@@ -1,0 +1,24 @@
+The Utilities App
+
+Эндпойнты:
+
+POST / в теле json вида
+
+{
+	"customerId": "admin",  // непустое
+	"gas": 1,	// 0 или больше
+	"coldWater": 0, // 0 или больше
+	"hotWater": 2 // 0 или больше
+}
+
+GET /{customerId}
+
+Порядок установки:
+
+Для сборки используется maven
+
+Распаковать архив.
+Перейти в папку с файлом pom.xml.
+Открыть терминал и выполнить команду mvn package
+Перейти в папку target.
+Для запуска выполнить java -jar utilities-0.0.1-SNAPSHOT.jar
